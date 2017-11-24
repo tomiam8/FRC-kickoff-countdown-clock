@@ -7,23 +7,18 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="script.js"></script>
 	</head>
-	<body onload="updateClock()">
-		<div class="background" id="imgBackgroundBehind">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Alaska_Red_Fox_%28Vulpes_vulpes%29.jpg" alt="background" />
-		</div>
-		<div class="background" id="imgBackgroundBehind">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Wien_Zentralfriedhof_Kirche_Innenraum_SO-Seite_01.jpg" />
-		</div>
-		
+	<body onload="initial()">
+		<img class="background" id="imgBackgroundBack" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Alaska_Red_Fox_%28Vulpes_vulpes%29.jpg" alt="background"/>
+		<img class="background" id="imgBackgroundFront" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Wien_Zentralfriedhof_Kirche_Innenraum_SO-Seite_01.jpg" style="opacity: 1;"/>
 	
 		<h1 class="font-effect-outline" id="time">
 			<div class="timeNumber" id="days">1</div>
-			<div class="timeDescriber">day</div>
-			<div id="hours">2</div>
-			<div class="timeDescriber">hr</div>
-			<div id="minutes">45</div>
-			<div class="timeDescriber">min</div>
-			<div id="seconds">3</div>
+			<div class="timeDescriber">days   </div>
+			<div class="timeNumber" id="hours">2</div>
+			<div class="timeDescriber">h</div>
+			<div class="timeNumber" id="minutes">45</div>
+			<div class="timeDescriber">m</div>
+			<div class="timeNumber" id="seconds">3</div>
 			<div class="timeDescriber">s</div>
 		</h1>
 	</body>

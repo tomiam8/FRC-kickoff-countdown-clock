@@ -10,31 +10,27 @@ body {
 }
 
 #time div {
-	font-size:300%;
 	display: inline-block;
 	color: #EFEFEF;
 	font-family: 'Lato', 'Comic Sans MS', serif;
 }
 
 .timeNumber {
-	font-weight: 400
+	font-weight: 400;
+	font-size:300%;
 }
 
 .timeDescriber {
-	font-weight: 100
+	font-weight: 100;
+	font-size: 150%;
 }
 
 .background {
 	position: absolute;
 	top: 0;
 	left: 0;
-	object-fit: cover;
-	width: 100%;
-	height:100%;
-	overflow:hidden;
-}
-
-.background img {
+	overflow: hidden;
+	transition: opacity 0.5s ease;
 	object-fit: cover;
 	width: 100%;
 	height:100%;

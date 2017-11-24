@@ -1,5 +1,5 @@
 body {
-	background-color: #EFEFEF
+	background-color: #666666;
 }
 
 #time {
@@ -10,5 +10,16 @@ body {
 }
 
 #time div {
+	font-size:300%;
 	display: inline-block;
+	color: #EFEFEF;
+	font-family: 'Lato', 'Comic Sans MS', serif;
+}
+
+.timeNumber {
+	font-weight: 400
+}
+
+.timeDescriber {
+	font-weight: 100
 }

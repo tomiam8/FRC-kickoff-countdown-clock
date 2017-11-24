@@ -3,23 +3,27 @@
 	<head>
 		<meta charset="utf-8">
 		<title>FRC Kickoff Countdown Clock</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,400&effect=outline">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Pacifico&effect=outline">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		<link rel="stylesheet" href="style.css">
 		<script src="script.js"></script>
 	</head>
 	<body onload="initial()">
-		<img class="background" id="imgBackgroundBack" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Alaska_Red_Fox_%28Vulpes_vulpes%29.jpg" alt="background"/>
-		<img class="background" id="imgBackgroundFront" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Wien_Zentralfriedhof_Kirche_Innenraum_SO-Seite_01.jpg" style="opacity: 1;"/>
+		<img class="background" id="imgBackgroundBack" alt="background"/>
+		<img class="background" id="imgBackgroundFront"  style="opacity: 1;"/>
 	
-		<h1 class="font-effect-outline" id="time">
-			<div class="timeNumber" id="days">1</div>
-			<div class="timeDescriber">days   </div>
-			<div class="timeNumber" id="hours">2</div>
-			<div class="timeDescriber">h</div>
-			<div class="timeNumber" id="minutes">45</div>
-			<div class="timeDescriber">m</div>
-			<div class="timeNumber" id="seconds">3</div>
-			<div class="timeDescriber">s</div>
-		</h1>
+		<div id="time">
+			<h1 >
+			<div class="timeNumber" id="days"></div>
+				<div class="timeDescriber">days</div>
+				<div class="timeNumber" id="hours"></div>
+				<div class="timeDescriber">h</div>
+				<div class="timeNumber" id="minutes"></div>
+				<div class="timeDescriber">m</div>
+				<div class="timeNumber" id="seconds"></div>
+				<div class="timeDescriber">s</div>
+			</h1>
+		</div>
+		<p  id="kickoffMessage"><i>Till the FRC 2018 kickoff!</i></p>
 	</body>
 </html>

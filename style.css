@@ -12,17 +12,19 @@ body {
 #time div {
 	display: inline-block;
 	color: #EFEFEF;
-	font-family: 'Lato', 'Comic Sans MS', serif;
+	font-family: 'Lato', serif;
 }
 
 .timeNumber {
+	-webkit-text-stroke: 2px #000000;
 	font-weight: 400;
-	font-size:300%;
+	font-size:400%;
 }
 
 .timeDescriber {
-	font-weight: 100;
-	font-size: 150%;
+	-webkit-text-stroke: 1px #000000;
+	font-weight: 300;
+	font-size: 225%;
 }
 
 .background {
@@ -35,3 +37,16 @@ body {
 	width: 100%;
 	height:100%;
 }
+
+#kickoffMessage {
+	position: absolute;
+	bottom: 0;
+	right: 1%;
+	font-weight:100;
+	font-size: 250%;
+	display: inline-block;
+	color: #EFEFEF;
+	font-family: 'Pacifico', cursive;
+	text-align: right;
+	-webkit-text-stroke: 2px #000000;
+}	

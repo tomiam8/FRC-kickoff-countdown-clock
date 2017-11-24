@@ -3,11 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<title>FRC Kickoff Countdown Clock</title>
-		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,400&effect=outline">
+		<link rel="stylesheet" href="style.css">
 		<script src="script.js"></script>
 	</head>
-	<body>
+	<body onload="updateClock()">
+		<div class="background" id="imgBackgroundBehind">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Alaska_Red_Fox_%28Vulpes_vulpes%29.jpg" alt="background" />
+		</div>
+		<div class="background" id="imgBackgroundBehind">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Wien_Zentralfriedhof_Kirche_Innenraum_SO-Seite_01.jpg" />
+		</div>
+		
+	
 		<h1 class="font-effect-outline" id="time">
 			<div class="timeNumber" id="days">1</div>
 			<div class="timeDescriber">day</div>
@@ -17,6 +25,6 @@
 			<div class="timeDescriber">min</div>
 			<div id="seconds">3</div>
 			<div class="timeDescriber">s</div>
-		</div>
+		</h1>
 	</body>
 </html>

@@ -21,8 +21,6 @@ function initial() {
             localStorage.clear();
             location.reload();
         }
-        runSlideshow = true;
-        updater();
     }
     else {
         //Gets pictures
@@ -32,10 +30,14 @@ function initial() {
             pictures = data.map(picture => picture.URL);
             localStorage.setItem("picturesCache", JSON.stringify(pictures));
             localStorage.setItem("cacheDate", Math.round(Date.now()/86400000)); //86400000 is days
-            runSlideshow = true;
-            updater();
         });
     }
+    //Start slideshow after a second
+    setTimeout(function() {
+        runSlideshow = true;
+        updater();
+        setTimeout(headerBarHidden, 2500); //Slideshow takes 2s to start for pictures to load. Fades 500ms later so its in the middle of the front picture fading.
+    }, 1000);
 }
 
 function changePicture() {
@@ -72,6 +74,17 @@ function updateClock() {
 	document.getElementById("minutes").innerHTML = Math.floor((time/60)%60);
 	document.getElementById("seconds").innerHTML = Math.floor(time%60);
     setTimeout(updateClock, 1000);
+}
+
+//Non-logicy display stuff
+function headerBarVisible() {
+    document.getElementById("headerBar").style.opacity = 1;
+}
+
+function headerBarHidden() {
+    if (runSlideshow) {
+        document.getElementById("headerBar").style.opacity = 0;
+    }
 }
 
 initial();

@@ -10,7 +10,11 @@
 	<body>
 		<img class="background" id="imgBackgroundBack" alt="background"/>
 		<img class="background" id="imgBackgroundFront"  style="opacity: 1;" src="http://www.firstroboticscanada.org/new/wp-content/uploads/2018/08/deep_space_bg.jpg"/>
-	
+
+		<div id="headerBar" onmouseover="headerBarVisible()" onmouseout="headerBarHidden()"> 
+			<p><a href="https://github.com/tomiam8/FRC-kickoff-countdown-clock">Github</a></p>
+			<p id="submitPhotos" onclick="openSubmissionDialogue()"> Submit Photos</p>
+		</div>
 		<div id="time">
 			<h1>
 			<div class="timeNumber" id="days"></div>
@@ -23,7 +27,7 @@
 				<div class="timeDescriber">s</div>
 			</h1>
 		</div>
-		<p id="kickoffMessage" onclick="openSubmissionDialogue()"/>
+		<p id="kickoffMessage">Till 2019 Kickoff!</p>
 	</body>
     <script src="script.js"></script>
 </html>
